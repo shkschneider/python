@@ -1,4 +1,4 @@
-#!/usr/bin/python -tt
+#!/usr/bin/env python
 
 import sys
 
@@ -12,3 +12,5 @@ for filename in args:
     except IOError:
         print 'IOError intercepted'
         #raise IOError
+
+#EOF

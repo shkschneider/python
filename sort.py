@@ -1,4 +1,4 @@
-#!/usr/bin/python -tt
+#!/usr/bin/env python
 
 # lists
 print sorted([4, 2, 1, 6])
@@ -10,4 +10,4 @@ print sorted(l)
 # custom
 print sorted(['b', 'cc', 'aaa'], key=len, reverse=True)
 
-# ...
+# EOF

@@ -1,4 +1,4 @@
-#!/usr/bin/python -tt
+#!/usr/bin/env python
 
 import re
 
@@ -24,3 +24,5 @@ Heather Albrecht: 548.326.4584 919 Park Place'''
 entries = re.split('\n+', input)
 for entry in entries:
     print re.findall(r'^([^:]+): ([0-9\.]+) (.+)$', entry.strip(), flags=re.IGNORECASE)
+
+# EOF

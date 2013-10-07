@@ -1,4 +1,4 @@
-#!/usr/bin/python -tt
+#!/usr/bin/env python
 
 import os
 import sys
@@ -20,3 +20,5 @@ for cmd in args:
         print 'Error #%d' % (status)
         continue
     print output
+
+# EOF

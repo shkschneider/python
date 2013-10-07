@@ -1,4 +1,4 @@
-#!/usr/bin/python -tt
+#!/usr/bin/env python
 
 import sys
 
@@ -14,3 +14,5 @@ for s in sys.argv[1:]:
 
 del sys.argv[0]
 print sys.argv
+
+# EOF

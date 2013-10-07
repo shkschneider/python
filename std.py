@@ -1,4 +1,4 @@
-#!/usr/bin/python -tt
+#!/usr/bin/env python
 
 import sys
 
@@ -9,3 +9,5 @@ sys.stderr.write('stderr' + '\n')
 #sys.stdout = f
 #sys.stdout = sys.__stdout__
 #f.close()
+
+# EOF

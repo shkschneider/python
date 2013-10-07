@@ -1,4 +1,4 @@
-#!/usr/bin/python -tt
+#!/usr/bin/env python
 
 '''
 You should document your sources
@@ -16,3 +16,5 @@ def func():
 
 if __name__ == '__main__':
     func()
+
+# EOF
