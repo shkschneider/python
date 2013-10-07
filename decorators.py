@@ -1,5 +1,29 @@
 #!/usr/bin/env python
 
+# staticmethod
+class ClassExample:
+
+    @staticmethod
+    def staticExample():
+        print 'ClassExample.staticExample()'
+
+def staticmethod_example():
+    ClassExample.staticExample()
+
+# auth
+def auth(func):
+    def wrapper(*args, **kwargs):
+        authenticated = True
+        if not authenticated:
+            raise Exception('403 Forbidden')
+        return func(*args, **kwargs)
+    return wrapper
+
+@auth
+def auth_example():
+    print 'auth_example()'
+
+# once
 def once(name):
     callstack = []
     def wrapper(func):
@@ -12,15 +36,13 @@ def once(name):
     return wrapper
 
 @once('main')
-def main():
-    print 'Executed'
+def once_example():
+    print 'once_example()'
 
 if __name__ == '__main__':
-    print 'main()'
-    main()
-    print 'main()'
-    main()
-    print 'main()'
-    main()
+    auth_example()
+    once_example()
+    once_example()
+    staticmethod_example()
 
 # EOF
