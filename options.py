@@ -15,7 +15,7 @@ parser = argparse.ArgumentParser(prog=os.path.basename(sys.argv[0]),
                                  description='little description about this python script',
                                  epilog='footer notes',
                                  add_help=True)
-parser.add_argument('-o', '--output',  dest='output',  type=str,        metavar='FILE',     nargs=1,   default='stdout',  help='little help about -o')
+parser.add_argument('-o', '--output',  dest='output',  type=str,        metavar='FILE',                default='stdout',  help='little help about -o')
 parser.add_argument('-v', '--verbose', dest='verbose', action='store_true',                            default=False,     help='little help about -v')
 parser.add_argument('-i', '--input',   dest='input',   action='append', metavar='FILE',     nargs=1,                      help='little help about -i')
 parser.add_argument('-I', '--inputs',  dest='inputs',  type=str,        metavar='FILE ...', nargs='+', default='stdin',   help='little help about -I')
